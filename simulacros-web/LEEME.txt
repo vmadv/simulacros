@@ -1,0 +1,30 @@
+LOS SIMULACROS DE VÁZQUEZ · A1.2002 INGENIERÍA AGRONÓMICA
+
+Web estática, sin servidor ni base de datos. Basta con subir esta carpeta tal cual.
+
+CÓMO PUBLICARLA (opción más sencilla, gratis)
+1. Entra en https://app.netlify.com/drop
+2. Arrastra esta carpeta completa (simulacros-web) a la página.
+3. Netlify te da una dirección pública del tipo https://nombre-aleatorio.netlify.app
+4. Si creas una cuenta gratuita, puedes cambiar el nombre y volver a subir la carpeta cuando haya cambios.
+
+Alternativas: GitHub Pages, Cloudflare Pages o cualquier hosting donde puedas subir archivos.
+
+QUÉ HAY DENTRO
+- index.html ........ la página y sus estilos
+- app.js ............ la lógica: simulacros, práctica, tarjetas, guía
+- datos/temas.js .... nombres de los temas
+- datos/teoria-a.js . 75 preguntas de teoría (bloque A)
+- datos/teoria-b.js . 75 preguntas de teoría (bloque B)
+- datos/supuestos.js  3 supuestos prácticos de 25 preguntas
+
+CÓMO AÑADIR O CORREGIR PREGUNTAS
+Cada pregunta es una línea P("id", "tema", "enunciado", [4 opciones], índice de la correcta, "explicación").
+El índice va de 0 a 3 (0 = la primera opción que escribes). La web reordena las opciones para que la
+correcta no caiga siempre en la misma letra, así que escríbela donde quieras.
+
+ACCESO Y PRIVACIDAD
+La web pide una contraseña la primera vez; luego el navegador la recuerda. (No la escribas en este archivo: se publica con la web.)
+Es una barrera para curiosos, no una protección fuerte: el contenido sigue en los archivos.
+La página lleva la etiqueta "noindex" para que Google no la indexe: solo entra quien tenga el enlace.
+El progreso de cada persona se guarda solo en su navegador.
